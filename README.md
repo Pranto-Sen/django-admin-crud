@@ -35,8 +35,6 @@
     ```
      myproject/
         │
-        ├── .venv/
-        │
         ├── media/
         │   └── hotel_images/
         │
@@ -54,11 +52,11 @@
         │   ├── tests.py
         │   └── views.py
         │
+        ├── myproject/
+        │ 
         ├── .env
         ├── .env.sample
-        ├── .gitignore
-        ├── manage.py
-        └── requirements.txt
+        └── manage.py
 
     ```
 
@@ -79,7 +77,7 @@
         SOURCE_FOLDER=         # Path to the directory where Scrapy project images are stored
       
       ```
-    - The Scrapy project images are stored in a folder named "hotel_images" located on the local storage. You can navigate inside this folder    "hotel_images" to access the images.
+    - **The Scrapy project images are stored in a folder named ```hotel_images``` located on the local storage. You can navigate inside this ```hotel_images``` folder to access the images. After navigating inside this ```hotel_images``` folder, copy the path and paste it as ```SOURCE_FOLDER```.**
 7. **Create Migrations for Your App**
     ```
     python manage.py makemigrations 
