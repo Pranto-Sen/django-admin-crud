@@ -65,7 +65,7 @@
 6. **Create the .env file in the root directory of the project, where manage.py and .env.sample are located** 
 
       ```sql
-      # Django database connection details
+        # Django database connection details
         DJANGO_DATABASE_NAME=  # Name of the Django database
         DATABASE_USER=         # PostgreSQL database username
         DATABASE_PASSWORD=     # PostgreSQL database password
@@ -79,6 +79,7 @@
         SOURCE_FOLDER=         # Path to the directory where Scrapy project images are stored
       
       ```
+    - The Scrapy project images are stored in a folder named "hotel_images" located on the local storage. You can navigate inside this folder    "hotel_images" to access the images.
 7. **Create Migrations for Your App**
     ```
     python manage.py makemigrations 
