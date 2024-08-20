@@ -61,23 +61,33 @@
     ```
 
 6. **Create the .env file in the root directory of the project, where manage.py and .env.sample are located** 
+    - First, create the database and specify the ```DJANGO_DATABASE_NAME``` value in the .env file. Execute the SQL command to create the database: ```CREATE DATABASE 
+        database_name;```
+    - In the previous assignment, you already ran the project, which automatically created a database and stored the scraped information. Now, use this database for the 
+       ```SCRAPY_DATABASE_NAME```
+    - The Scrapy project images are stored in a folder named ```hotel_images``` located on the local storage. You can navigate inside this ```hotel_images``` folder to access 
+          the images. After navigating inside this ```hotel_images``` folder, copy the path and paste it as ```SOURCE_FOLDER```
+    - If the image path is: `D:\\Scrapy\tripdotcom-hotel-scraper\trip_scraper\hotel_images\image_1.jpg` 
+         Then set  `SOURCE_FOLDER = D:\\Scrapy\tripdotcom-hotel-scraper\trip_scraper\hotel_images`
 
       ```sql
+      
         # Django database connection details
-        DJANGO_DATABASE_NAME=  # Name of the Django database
-        DATABASE_USER=         # PostgreSQL database username
-        DATABASE_PASSWORD=     # PostgreSQL database password
-        DATABASE_HOST=         # Hostname for the database connection
-        DATABASE_PORT=         # Port number for the PostgreSQL database
+        DJANGO_DATABASE_NAME = Django database name
+        DATABASE_USER = PostgreSQL database username
+        DATABASE_PASSWORD = password
+        DATABASE_HOST = Hostname 
+        DATABASE_PORT = Portnumber 
         
-        # Scrapy project database name
-        SCRAPY_DATABASE_NAME=  # Name of the database used by the Scrapy project
+        # Name of the database used by the Scrapy project
+        SCRAPY_DATABASE_NAME= Scrapy database name
         
-        # Source folder for Scrapy images
-        SOURCE_FOLDER=         # Path to the directory where Scrapy project images are stored
+        # Path to the directory where Scrapy project images are stored
+        SOURCE_FOLDER=        
       
       ```
-    - **The Scrapy project images are stored in a folder named ```hotel_images``` located on the local storage. You can navigate inside this ```hotel_images``` folder to access the images. After navigating inside this ```hotel_images``` folder, copy the path and paste it as ```SOURCE_FOLDER```.**
+  
+      
 7. **Create Migrations for Your App**
     ```
     python manage.py makemigrations 
