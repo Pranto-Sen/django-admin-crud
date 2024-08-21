@@ -72,10 +72,9 @@ This project is a Django-based CRUD (Create, Read, Update, Delete) application d
        ```SCRAPY_DATABASE_NAME```
     - The Scrapy project images are stored in a folder named ```hotel_images``` located on the local storage. You can navigate inside this ```hotel_images``` folder to access 
           the images. After navigating inside this ```hotel_images``` folder, copy the path and paste it as ```SOURCE_FOLDER```
-    - If the image path is: `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images/image_1.jpg` 
+    - _If the image path is: `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images/image_1.jpg` 
          Then set  `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images`
-
-       _Note: This is just an example. You need to set your own local storage path based on where the images are stored on your system._
+      Note: This is just an example. You need to set your own local storage path based on where the images are stored on your system._
 
       ```sql
       
