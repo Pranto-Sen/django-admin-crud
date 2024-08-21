@@ -75,6 +75,8 @@ This project is a Django-based CRUD (Create, Read, Update, Delete) application d
     - If the image path is: `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images/image_1.jpg` 
          Then set  `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images`
 
+       _Note: This is just an example. You need to set your own local storage path based on where the images are stored on your system._
+
       ```sql
       
         # Django database connection details
