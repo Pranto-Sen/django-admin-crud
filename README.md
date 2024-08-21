@@ -1,6 +1,8 @@
 ## Introduction
 This project is a Django-based CRUD (Create, Read, Update, Delete) application designed to manage hotel data. It allows you to store and manage property information, including images, amenities, and locations. This application integrates with a Scrapy project that scrapes hotel data from external sources, stores it in a PostgreSQL database, and downloads images to local storage. The Django application provides an admin interface to manage the scraped data, including migrating the data from the Scrapy database to the Django database and handling image storage.
-
+## Prerequisites
+   - Python 3.6+
+   - PostgreSQL
 ## Installation
 
 1. **Clone the repository:**
