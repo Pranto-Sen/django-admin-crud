@@ -1,3 +1,6 @@
+## Introduction
+This project is a Django-based CRUD (Create, Read, Update, Delete) application designed to manage hotel data. It allows you to store and manage property information, including images, amenities, and locations. This application integrates with a Scrapy project that scrapes hotel data from external sources, stores it in a PostgreSQL database, and downloads images to local storage. The Django application provides an admin interface to manage the scraped data, including migrating the data from the Scrapy database to the Django database and handling image storage.
+
 ## Installation
 
 1. **Clone the repository:**
@@ -67,8 +70,8 @@
        ```SCRAPY_DATABASE_NAME```
     - The Scrapy project images are stored in a folder named ```hotel_images``` located on the local storage. You can navigate inside this ```hotel_images``` folder to access 
           the images. After navigating inside this ```hotel_images``` folder, copy the path and paste it as ```SOURCE_FOLDER```
-    - If the image path is: `D:\\Scrapy\tripdotcom-hotel-scraper\trip_scraper\hotel_images\image_1.jpg` 
-         Then set  `SOURCE_FOLDER = D:\\Scrapy\tripdotcom-hotel-scraper\trip_scraper\hotel_images`
+    - If the image path is: `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images/image_1.jpg` 
+         Then set  `/home/w3e37/Desktop/tripdotcom-hotel-scraper/trip_scraper/hotel_images`
 
       ```sql
       
